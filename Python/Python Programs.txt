@@ -1,0 +1,300 @@
+# concatenate two lists index-wise
+
+l1 = ["M", "na", "i", "Ke"]
+l2 = ["y", "me", "s", "lly"]
+l3 = [i+j for i,j in zip(l1,l2)]
+print(l3)
+
+
+# largest between two numbers using function(def)
+
+n1 = int(input("Enter 1st no = "))
+n2 = int(input("Enter 2nd no = "))
+def fun():
+    if (n1>n2):
+        print("First nuber is greater")
+    else:
+        print("Second")
+fun()
+
+#area of circle using function(def) with passing the argument
+
+def area(r):
+    if r < 0:
+        return None
+    else:
+        return (3.14*r**2)
+radius = int(input("Enter radius of th circle = "))
+print(area(radius))
+
+
+#print addition and subtraction using def function 
+
+def calc(num1,num2):
+    sum = num1 + num2
+    sub = num1 - num2
+    return sum,sub
+n1 = int(input("Enter num1 = "))
+n2 = int(input("Enter num2 = "))
+print(calc(n1,n2))
+
+# return two values from def function
+
+n=int(input("Enter number = "))
+def sr():
+    return n**2,n**3
+print(sr()) 
+
+
+#calculate compound interest using function and pass the variable as argument
+
+def ci(p,r,t):
+    return p*(1+(r/100)**t)
+pi=int(input("Enter Principle = "))
+ri=int(input("Enter Rate = "))
+ti=int(input("Enter Time = "))
+print(ci(pi,ri,ti))
+
+
+#WAP to print maximum and smallest number numbers from the list
+
+lst=[]
+n=int(input("Enter no. of element = "))
+for i in range(0,n):
+    ele=int(input())
+    lst.append(ele)
+def maximum(lst):
+    print(max(lst))
+def minimum(lst):
+    print(min(lst))
+maximum(lst)
+minimum(lst)
+
+
+#print even numbers from the list
+
+lst=[]
+print("Enter the elements in list")
+for i in range(5):
+    ele=int(input())
+    lst.append(ele)
+print("Even numbers = ")
+def extract_even(lst):
+    for i in range(5):
+        if (i%2)==0:
+            print(lst[i])
+extract_even(lst)
+
+
+#take a dictionary from the user and print the sum of the values of the dixtionary
+
+d = {int(x):int(y) for i in input("Enter Keys = ").split() for y in input("Enter Values").split()}
+print(d)
+print(sum(d.Values()))
+
+
+#take a dictionary(name and phone number) from the user and delete the specified name
+
+d = {int(x):int(y) for i in input("Enter Keys = ").split() for y in input("Enter Values").split()}
+print(d)
+print(sum(d.Values()))
+
+
+
+
+a = ('p','y','t','h','o','n')
+print(a[::2])
+
+
+
+
+l = [1,-2,7,-9,3]
+d = {"Negative":0,"Positive":0}
+for i in l:
+    if i<0:
+        d["Negative"]=d.get("Negative",0)+1
+    else:
+        d["Positive"]=d.get("Positive",0)+1
+print(d)
+
+OR
+
+def abc(l):
+    d={}
+    d["Positive"]=0
+    d["Negative"]=0
+    for i in l:
+        if i<0:
+            d["Negative"]=d.get("Negative",0)+1
+        else:
+            d["Positive"]=d.get("Positive",0)+1
+    print(d)
+list1=[1,-2,7,-9,3]
+abc(list1)
+
+
+
+
+
+def sum_all(*arg):
+    print(sum(arg))
+sum_all(10,20,30,40,50)
+
+
+
+
+def main():
+    obj1 = open("Demp1.txt","w")
+    obj1.write("Hello\nHow are you? \nWelcome to the session of file handling")
+    obj1.close()
+main()
+
+
+
+
+
+def main():
+    obj1 = open("Writenumbers.txt","w")
+    for i in range(1,21):
+        x = str(i)
+        obj1.write(x)
+    obj1.close()
+main()
+
+
+
+
+
+from random import randint
+f = open("Writerandom.txt","w")
+for i in range(51):
+    x = randint(500,1000)
+    x = str(x)
+    f.write(x+"\n")
+f.close()
+
+
+
+
+f = open("Demo1.txt","r")
+print(f.read())
+f.close()
+
+
+
+
+
+a = open("Writerandom.txt","r")
+num1 = (a.readlines())
+sum = 0
+for i in num1:
+    sum = sum + int(i)
+print(sum)
+
+
+
+
+
+a = open("Demo1.txt","r")
+x = a.readlines()
+sum = 0
+for i in x:
+    sum = sum + 1
+print(sum)
+
+
+
+s = input("Enter String to Append in file = ")
+a = open("Demo1.txt","a+")
+a.write(s)
+a.close()
+a = open("Demo1.txt","r")
+print(a.read())
+
+
+
+                CLASS PROGRAMS
+
+class hello:
+    a = 10
+    def display(self):
+        print("Welcome to the Session of Python")
+
+obj1 = hello()
+obj1.display()              #hello.display(obj1)
+
+
+
+class hello:
+    "This is class hello"       #documentation string
+    a = 10
+    def display(self):
+        self.a = 20
+        print("Welcome to the Session of Python")
+
+
+
+
+obj1 = hello()
+obj1.display()          #hello.display(obj1)
+print(hello.a)
+print(obj1.a)
+print(hello.__doc__)        #printitng documentation string
+
+
+
+#Constructor
+
+class basic:
+    def __init__(self, name, age):
+        self.n = name
+        self.a = age
+
+    def display(self):
+        print("Name =",self.n)
+        print("Age =",self.a)
+
+obj = basic("ORISIS",18)
+obj.display()
+
+
+
+
+class basic:
+    def __init__(self, x, y):
+        self.a = x
+        self.b = y
+
+    def display(self):
+        print("Sum = ",self.a + self.b)
+
+obj = basic(1,2)
+obj.display()
+
+
+
+
+import re
+n = ["9045796692","9045x96692","7242568864245765473","9808012306"]
+for i in n:
+    if(len(i))==10:
+        b=re.match("[9]\d{9}",i)
+        if b == None:
+            pass
+        else:
+            print("Phone No. = ",b.group())
+
+
+
+import re
+a = input("Enter the Mail ID = ")
+b = re.search('@\w*.\w*',a)
+print(b)
+
+
+
+
+import re
+a = input("Enter the Mail ID = ")
+b = re.findall('\d{1,2}-\d{2}-\d{4}',a)
+print(b)
