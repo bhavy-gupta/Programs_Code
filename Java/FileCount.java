@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.Scanner;
 
-class Main {
+class FileCount {
   public static void main(String[] args) {
 
     int count = 0; // For Counting Number of Lines
