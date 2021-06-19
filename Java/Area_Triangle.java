@@ -7,6 +7,7 @@ class Area_Triangle {
         base = sc.nextDouble();
         height = sc.nextDouble();
         area = (0.5 * base * height);
-
+        System.out.println(area);
+        sc.close();
     }
 }

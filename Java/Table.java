@@ -1,4 +1,4 @@
-import java.io.*;
+//import java.io.*;
 
 class Table {
 	public static void main(String args[]) {
