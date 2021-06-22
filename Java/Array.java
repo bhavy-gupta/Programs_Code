@@ -12,5 +12,6 @@ class Array {
         for (int i = 0; i < 5; i++) {
             System.out.println(" arr[" + i + "] : " + arr[i]);
         }
+        sc.close();
     }
 }

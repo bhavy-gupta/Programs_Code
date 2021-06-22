@@ -13,5 +13,6 @@ public class Si {
         time = sc.nextInt();
         si = principle * rate * time / 100;
         System.out.println("Simple Interest = " + si);
+        sc.close();
     }
 }

@@ -12,5 +12,6 @@ class Substr {
         end = sc.nextInt();
         String sub = s.substring(start, end);
         System.out.println(sub);
+        sc.close();
     }
 }

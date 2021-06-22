@@ -10,5 +10,6 @@ class Factorial {
 			t = t * i;
 		}
 		System.out.println("Factorial of " + n + " = " + t);
+		sc.close();
 	}
 }

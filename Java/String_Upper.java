@@ -7,5 +7,6 @@ class String_Upper {
         String s = sc.nextLine();
         s = s.toUpperCase();
         System.out.println("String in UpperCase : " + s);
+        sc.close();
     }
 }

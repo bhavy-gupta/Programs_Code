@@ -31,5 +31,6 @@ class Week {
                 System.out.println("Invalid!!!");
                 break;
         }
+        sc.close();
     }
 }

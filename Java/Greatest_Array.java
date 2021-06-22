@@ -22,5 +22,6 @@ class Greatest_Array {
         }
         System.out.println("\nGreatest = " + g);
         System.out.println("Smallest = " + s);
+        sc.close();
     }
 }

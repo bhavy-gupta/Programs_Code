@@ -12,5 +12,6 @@ public class Rev_Num {
             n = n / 10;
         }
         System.out.println("Reverse = " + rev);
+        sc.close();
     }
 }
