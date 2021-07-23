@@ -15,6 +15,7 @@ class ArraySearch {
 
         System.out.print("Enter the Element to Search = ");
         ele = sc.nextInt();
+        sc.close();
         for (i = 0; i < size; i++) {
             if (a[i] == ele) {
                 System.out.println("Element Found");
@@ -25,6 +26,5 @@ class ArraySearch {
         }
         if (pos == -1)
             System.out.println("Element NOT Found");
-        sc.close();
     }
 }
