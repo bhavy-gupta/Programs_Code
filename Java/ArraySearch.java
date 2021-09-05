@@ -1,7 +1,8 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 class ArraySearch {
     public static void main(String args[]) {
+        /*
         Scanner sc = new Scanner(System.in);
         int i, ele, size, a[], pos = -1;
         System.out.print("Enter the size of Array = ");
@@ -26,5 +27,7 @@ class ArraySearch {
         }
         if (pos == -1)
             System.out.println("Element NOT Found");
+        sc.close();
+        */
     }
 }

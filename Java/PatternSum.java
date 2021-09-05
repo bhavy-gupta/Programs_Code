@@ -2,7 +2,6 @@
 // all combinations of positive
 // numbers that add upto given
 // number
-import java.io.*;
 
 class PatternSum
 {
