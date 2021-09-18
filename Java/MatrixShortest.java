@@ -19,7 +19,7 @@ class MatrixShortest {
             System.out.println();
         }
         System.out.print("Enter Starting Row : ");
-        ArrayList ans = new ArrayList();
+        ArrayList<Integer> ans = new ArrayList<Integer>();
         int s = sc.nextInt();
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
@@ -40,5 +40,6 @@ class MatrixShortest {
         }
 
         System.out.print(ans);
+        sc.close();
     }
 }
