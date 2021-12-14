@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title>Prime Elements in Array </title>
+</head>
+<body>
+    <h3>Prime Elements in an Array</h3>
+    <script type="text/vbscript">
+        Dim i
+        Dim j
+        Dim count
+        Dim c
+        arr = Array(1, 2, 3, 6, 11, 17, 19, 98)
+        count=0
+        For each i in arr
+            c = i
+            For j = 1 to c
+                If (i Mod j = 0) Then
+                    count = count + 1
+                End If
+            Next
+            If (count = 2 OR count = 1) Then
+                document.write("Prime " & i & "<BR>")
+            Else
+                document.write("Not Prime " & i & "<BR>")
+            End If
+            count = 0
+        Next
+</script>
+</body>
+</html>

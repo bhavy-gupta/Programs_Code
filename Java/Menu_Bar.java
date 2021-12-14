@@ -1,3 +1,4 @@
+/*
 import java.applet.Applet;
 import java.awt.*;
 
@@ -23,3 +24,4 @@ public class Menu_Bar extends Applet {
         f1.setVisible(true);
     }
 }
+*/

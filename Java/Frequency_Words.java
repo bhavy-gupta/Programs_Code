@@ -15,7 +15,7 @@ class Frequency_Words {
             // System.out.println(s);
             String[] words = s.split(" ");
             Set<String> set = new HashSet<>();
-            ArrayList<String> arr = new ArrayList<>();
+          //  ArrayList<String> arr = new ArrayList<>();
             for (String t : words) {
                 set.add(t);
             }
